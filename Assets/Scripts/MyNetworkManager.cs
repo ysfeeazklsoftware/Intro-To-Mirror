@@ -5,7 +5,7 @@ namespace DapperDino.Multiplayer
 {
     public class MyNetworkManager : NetworkManager
     {
-        public override void OnServerConnect(NetworkConnection conn)
+        public void OnServerConnect(NetworkConnection conn)
         {
             Debug.Log($"Player {conn.connectionId} has connected");
         }
